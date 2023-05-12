@@ -1,4 +1,3 @@
-
 import React from "react";
 import { useStore } from "effector-react";
 import Plot from "react-plotly.js";

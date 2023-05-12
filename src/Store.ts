@@ -113,7 +113,7 @@ export const createSection = (id = generateUid()): ISection => {
         id,
         rowSpan: 1,
         colSpan: 1,
-        title: "Example section",
+        title: "Section Name",
         visualizations: [],
         direction: "row",
         display: "normal",
@@ -517,7 +517,6 @@ export const $dashboard = domain
     .on(setTargetCategoryOptionCombos, (state, targetCategoryOptionCombos) => {
         return { ...state, targetCategoryOptionCombos };
     })
-    
     .on(setHasChildren, (state, hasChildren) => {
         return { ...state, hasChildren };
     })
@@ -664,6 +663,8 @@ export const $indicator = domain
         ) => {
             if (state.numerator) {
                 if (remove) {
+                    console.log("Dead0");
+
                     const { [id]: removed, ...others } =
                         state.numerator.dataDimensions;
                     return {

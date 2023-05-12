@@ -1,4 +1,3 @@
-
 import { useStore } from 'effector-react';
 import Plot from 'react-plotly.js';
 import { ChartProps } from '../../interfaces';

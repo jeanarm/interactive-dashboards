@@ -1608,7 +1608,6 @@ export const useVisualization = (
 
                     if (Object.keys(dhis2Queries).length > 0) {
                         const response: any = await engine.query(dhis2Queries);
-
                         numerator = response.numerator;
                         denominator = response.denominator;
                     } else if (allQueries.length > 0) {
